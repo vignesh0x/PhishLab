@@ -34,7 +34,7 @@ from core.cli import (
 from web.routes import web_bp
 
 HOST = '127.0.0.1'
-PORT = 5000cd ..
+PORT = 5000
 
 
 def create_app() -> Flask:
