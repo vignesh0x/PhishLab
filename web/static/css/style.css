@@ -320,38 +320,14 @@ body {
     justify-content: center;
 }
 
-.ig-phone-inner {
+.ig-phone-frame {
     position: relative;
-    width: 380px;
-    height: 580px;
-    background: #000;
-    border-radius: 32px;
-    border: 4px solid #262626;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.ig-phone-screen {
-    width: calc(100% - 8px);
-    height: calc(100% - 8px);
-    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    border-radius: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-    padding: 20px;
-}
-
-.ig-phone-screen span {
-    font-size: 16px;
-    opacity: 0.9;
+.ig-phone-img {
+    max-width: 380px;
+    height: auto;
+    display: block;
 }
 
 .ig-login-col {
@@ -369,10 +345,18 @@ body {
     text-align: center;
 }
 
+.ig-sub {
+    color: #262626;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
 .ig-logo {
     font-family: 'Billabong', 'Segoe UI', cursive;
     font-size: 40px;
-    margin-bottom: 28px;
+    margin-bottom: 12px;
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -453,13 +437,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 8px;
     color: #385185;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     text-decoration: none;
     margin-bottom: 14px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1;
+}
+
+.ig-fb-link svg {
+    flex-shrink: 0;
 }
 
 .ig-fb-link:hover {
@@ -522,6 +511,54 @@ body {
     margin: 0 4px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: 0.3px;
+}
+
+/* --- Instagram footer --- */
+.ig-footer {
+    max-width: 935px;
+    width: 100%;
+    padding: 24px 20px 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.ig-footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 16px;
+    margin-bottom: 16px;
+}
+
+.ig-footer-links a {
+    color: #737373;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.ig-footer-links a:hover {
+    text-decoration: underline;
+}
+
+.ig-footer-lang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: #737373;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.ig-footer-lang a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.ig-footer-lang a:hover {
+    text-decoration: underline;
 }
 
 /* ========================================
